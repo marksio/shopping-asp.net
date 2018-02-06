@@ -9,7 +9,7 @@ namespace shopping.Models
     public class shop
     {
         public int ID { get; set; }
-        public string Title { get; set; }
+        public string Name { get; set; }
         public string Desc { get; set; }
         public string Pic { get; set; }
         public string Link { get; set; }
