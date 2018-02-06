@@ -11,15 +11,25 @@ namespace shopping.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home";
-            List<string> title = new List<string>();
-            title.Add("T-Shirt");
-            title.Add("Smartphone");
-            title.Add("Laptop");
-            title.Add("Milk");
-            title.Add("Milo");
-            title.Add("Hard Disk");
-            ViewBag.title = title;
-            ViewBag.itemNum = title.Count;
+
+            List<string> id = new List<string>();
+            id.Add("1");
+            id.Add("2");
+            id.Add("3");
+            id.Add("4");
+            id.Add("5");
+            id.Add("6");
+            ViewBag.id = id;
+
+            List<string> name = new List<string>();
+            name.Add("T-Shirt");
+            name.Add("Smartphone");
+            name.Add("Laptop");
+            name.Add("Milk");
+            name.Add("Milo");
+            name.Add("Hard Disk");
+            ViewBag.name = name;
+            ViewBag.itemNum = name.Count;
 
             List<string> desc = new List<string>();
             desc.Add("T-Shirt");
@@ -39,6 +49,24 @@ namespace shopping.Controllers
             link.Add("Hard Disk");
             ViewBag.link = link;
 
+            return View();
+        }
+
+        public ActionResult Cart()
+        {
+            string valueid=null;
+            if (Request.Cookies["id"] != null)
+            {
+                for(int i = 0; i<Request.Cookies["id"].Value.Length;)
+                {
+                    string[] arr = new string[Request.Cookies["id"].Value.Length];
+                    arr[i] = Request.Cookies["id"].Value.ToString();
+
+                    valueid = arr[i];
+                    i++;
+                }
+                ViewBag.message = valueid;                
+            }
             return View();
         }
     }

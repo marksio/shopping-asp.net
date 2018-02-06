@@ -85,6 +85,6 @@ c:\users\lenovo\documents\visual studio 2015\Projects\shopping\shopping\bin\Micr
 c:\users\lenovo\documents\visual studio 2015\Projects\shopping\shopping\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\lenovo\documents\visual studio 2015\Projects\shopping\shopping\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 c:\users\lenovo\documents\visual studio 2015\Projects\shopping\shopping\bin\System.Web.Http.Owin.xml
-c:\users\lenovo\documents\visual studio 2015\Projects\shopping\shopping\obj\Debug\shopping.csprojResolveAssemblyReference.cache
 c:\users\lenovo\documents\visual studio 2015\Projects\shopping\shopping\obj\Debug\shopping.dll
 c:\users\lenovo\documents\visual studio 2015\Projects\shopping\shopping\obj\Debug\shopping.pdb
+C:\Users\LENOVO\Documents\Visual Studio 2015\Projects\shopping\shopping\obj\Debug\shopping.csprojResolveAssemblyReference.cache
